@@ -16,6 +16,7 @@ import seo from '@payloadcms/plugin-seo'
 import Projects from './collections/projects'
 
 export default buildConfig({
+  serverURL: process.env.PAYLOAD_URL,
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
