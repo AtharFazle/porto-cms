@@ -13,6 +13,9 @@ import Articles from './collections/articles'
 import Job from './collections/job'
 import seo from '@payloadcms/plugin-seo'
 import Projects from './collections/projects'
+import dotenv from "dotenv"
+
+dotenv.config()
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL || 'http://localhost:3000',
