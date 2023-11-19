@@ -18,7 +18,7 @@ import dotenv from "dotenv"
 dotenv.config()
 
 export default buildConfig({
-  serverURL: process.env.PAYLOAD_URL || 'http://localhost:3000',
+  serverURL: process.env.PAYLOAD_URL,
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
